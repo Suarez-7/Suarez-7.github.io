@@ -1,0 +1,807 @@
+<html> 
+	<head> 
+	<title>Home</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="themes/theme.css" />		<!--Applies the theme to the website-->
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />		<!--Applies the theme to the website-->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head> 
+
+<body>  
+	<!--home-->
+	 <div data-role="page" id="index" data-theme="D">		<!--data-theme='D' selects the theme created named 'D'-->
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>		<!--heading-->
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>Welcome to Mochachinos</h1></center>
+			<center><h2><p>What were you after?</p></h2></center>
+			<ul data-role="listview" data-inset="true" >		<!--creates a list for the information below-->
+			<li><a href="#menu" data-transition="flow"> <img src="menu.jpg"/> <h3>Menu</h3></a></li>			<!--transition flow makes the pages flow between each other-->
+			<li><a href="#info" data-transition="flow"> <img src="info.jpg"/> <h3>Information</h3></a></li>			<!--img src makes the requested image appear-->
+			<li><a href="#devinfo" data-transition="flow"> <img src="dev.jpg"/> <h3>Developers Information</h3></a></li>
+			</ul>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>
+	 
+	 
+	 <!--menu-->
+	 
+	 <div data-role="page" id="menu" data-theme="D">
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h2><p>Welcome to the menu</p></h2></center>
+			<ul data-role="listview" data-inset="true" >		<!--ul creates an unordered list-->
+			<li><a href="#breakfast" data-transition="flow">Breakfast</a></li>		<!--a href creates a link to the desired page-->
+			<li><a href="#lunch" data-transition="flow">Lunch</a></li>
+			<li><a href="#dessert" data-transition="flow">Desserts</a></li>
+			<p></p>
+			</ul>
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>		<!--creates a home button-->
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>	 
+	 
+	 
+	 <!--info-->
+	 
+	 <div data-role="page" id="info" data-theme="D">
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>This is Mochachinos information</h1>
+			<center><p>Mochachinos Cafe is a small kiosk located within Burwood One</p></center>
+			<center><p>We have been open for almost 4 years now</p></center>
+			<center><p>and are known for our great coffees, tastey focaccias</p></center>
+			<center><p>and delicious desserts</p></center>
+			<center><p>Come past and try us out!!!</p></center>
+			<center><h2> Contact us</h2></center>
+			<center><p>Burwood One</p></center>
+			<center><img src="01_maps.jpg"/></center>		<!--provides a map image-->
+			<center><p>Get directions by pressing the button</p></center>
+			<center><a href="https://www.google.fr/maps/place/Burwood+One/@-37.8538984,145.1502944,17z/data=!3m1!4b1!4m2!3m1!1s0x6ad63f7714ce93c5:0x82b50bcd5b0fce3b?hl=fr" data-role="button" data-inline="true" data-icon="search"> Find us on Google Maps </a></center>		<!--creates a button that links to google maps-->
+		</div>		
+		<div id="contact_buttons">	
+			<center><p>Phone Number</p></center>
+			<center><p>Give us a call and place an order</p></center>
+			<center><a href="tel:0388161072"  data-role="button" data-inline="true" data-icon="grid"> Call us </a>	</center>		<!--when pressed, the number assigned will be called-->
+		</div>
+  		<div>	
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>		<!--the a href links the home button to the index.html page-->
+		</div>
+	 	<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	</div>
+	 
+	 <!--developer-->
+
+	 <div data-role="page" id="devinfo" data-theme="D">
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>This is the developers page</h1></center>		<!--simple developers page-->
+			
+			
+			<center><p>Welcome to developers page</p></center>		<!--consisting of basic information about myself-->
+			<center><p>I am a student at Deakin University</p></center>
+			<center><p>I am currently in the 3rd year of my course</p></center>
+			<center><p>My course is a Bachelor of Information Technology,</p></center>
+			<center><p>with a major in Games Design</p></center>
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>	
+
+	 
+	 <!--breakfast-->
+
+	 <div data-role="page" id="breakfast" data-theme="D">
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>BREAKFAST</h1></center>
+			<center><h2><p>Welcome to breakfast page</p></h2></center>
+			<ul data-role="listview" data-inset="true" data-filter="true">		<!--places all the breakfast options in a list-->
+			<li><a href="#breakfastA" data-transition="flow">Breakfast A</a></li>
+			<li><a href="#breakfastB" data-transition="flow">Breakfast B</a></li>
+			<li><a href="#breakfastC" data-transition="flow">Breakfast C</a></li>		<!--each link goes to the respective breakfast page-->
+			<li><a href="#breakfastD" data-transition="flow">Breakfast D</a></li>
+			<li><a href="#breakfastE" data-transition="flow">Breakfast E</a></li>
+			<p></p>
+			</ul>
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>
+			<a href="#menu" data-transition="flow" data-role="button" data-inline="true" data-icon="back">Back</a>		<!--a button is created to take the website to the previous page-->
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>
+
+	 
+	 <!--lunch-->
+
+	 <div data-role="page" id="lunch" data-theme="D">
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>LUNCH</h1></center>
+			<center><h2><p>Welcome to lunch page</p></h2></center>
+			<ul data-role="listview" data-inset="true" data-filter="true">		<!--if text matches one of the options in the list, that option will appear individually-->
+			<li><a href="#lunchA" data-transition="flow">Lunch A</a></li>
+			<li><a href="#lunchB" data-transition="flow">Lunch B</a></li>
+			<li><a href="#lunchC" data-transition="flow">Lunch C</a></li>		<!--each link takes the user to the respective lunch page-->
+			<li><a href="#lunchD" data-transition="flow">Lunch D</a></li>
+			<li><a href="#lunchE" data-transition="flow">Lunch E</a></li>
+			<p></p>
+			</ul>
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>
+			<a href="#menu" data-transition="flow" data-role="button" data-inline="true" data-icon="back">Back</a>		<!--a button is reated labelled back-->
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>
+	 
+	 
+	 <!--dessert-->
+
+	 <div data-role="page" id="dessert" data-theme="D">
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>DESSERTS</h1></center>
+			<center><h2><p>Welcome to dessert page</p></h2></center>
+			<ul data-role="listview" data-inset="true" data-filter="true">		<!--data-filter creates a search bar-->
+			<li><a href="#dessertA" data-transition="flow">Dessert A</a></li>
+			<li><a href="#dessertB" data-transition="flow">Dessert B</a></li>
+			<li><a href="#dessertC" data-transition="flow">Dessert C</a></li>			<!--each option goes to the respective dessert page-->
+			<li><a href="#dessertD" data-transition="flow">Dessert D</a></li>
+			<li><a href="#dessertE" data-transition="flow">Dessert E</a></li>
+			<p></p>
+			</ul>
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>
+			<a href="#menu" data-transition="flow" data-role="button" data-inline="true" data-icon="back">Back</a>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>
+	 
+	 
+	 <!--breakfast 1-->
+
+	 <div data-role="page" id="breakfastA" data-theme="D">
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>This is the breakfastA page</h1></center>
+			<center><h2><p>Welcome to breakfastA page</p></h2></center>
+			<center><p>Egg and Bacon Wrap</p></center>
+			<center><p><img src="ebwrap.jpg" alt="e+b wrap photo"/></p></center>		<!--image of e+b wrap-->
+			<p><h2>Ingredients</h2></p>
+			<p>-1 onion, chopped</p>
+			<p>-1 tablespoon butter</p>		<!--ingredients provided-->
+			<p>-600ml thickened cream</p>
+			<p>-1/2 teaspoon salt</p>
+			<p>-1/4 teaspoon pepper</p>
+			<p>-2 cups shredded cheese</p>
+			<p>-1/2 pound sliced bacon, cooked and crumbled</p>
+			<p>-tortilla wraps</p>
+			<center><p><h2>Steps</h2></p></center>
+			<center><p>1. In frying pan, saute onions until translucent</p></center>
+			<center><p>2. In a bowl, beat the eggs, cream, salt and pepper</p></center>
+			<center><p>3. Pour over onions in frying pan</p></center>
+			<center><p>4. Sprinkle cheese and bacon to the frying pan</p></center>
+			<center><p>5. Cook and stir gently till eggs are set</p></center>			<!--steps on how to create the meal are provided-->
+			<center><p>6. Spoon the ingredients down the centre of the tortilla wrap and fold the sides over filling</p></center>
+			<center><p>7. Warm up in microwave for 1:30 minutes (if refrigerated)</p></center>
+			<center><p>8. Place in toaster till the wrap is completely toasted</p></center>
+			<center><p><a href="#feedback" data-transition="flow" data-role="button" data-inline="true" data-icon="star">Review</a></p></center>		<!--links to a review page-->
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>		
+			<a href="#breakfast" data-transition="flow" data-role="button" data-inline="true" data-icon="back">Back</a>		<!--true-inline=true sizes the button to fit the text-->
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>
+	 
+	 
+	 <!--breakfast 2-->
+
+	 <div data-role="page" id="breakfastB" data-theme="D">
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>This is the breakfastB page</h1></center>
+			<center><h2><p>Welcome to breakfastB page</p></h2></center>		<!--Intro to breakfastB page-->
+			<center><p>Egg and Bacon Wrap</p></center>
+			<center><p><img src="ebwrap.jpg" alt="e+b wrap photo"/></p></center>
+			<p><h2>Ingredients</h2></p>
+			<p>-1 onion, chopped</p>
+			<p>-1 tablespoon butter</p>
+			<p>-600ml thickened cream</p>
+			<p>-1/2 teaspoon salt</p>			<!--ingredients provided-->
+			<p>-1/4 teaspoon pepper</p>
+			<p>-2 cups shredded cheese</p>
+			<p>-1/2 pound sliced bacon, cooked and crumbled</p>
+			<p>-tortilla wraps</p>
+			<center><p><h2>Steps</h2></p></center>
+			<center><p>1. In frying pan, saute onions until translucent</p></center>
+			<center><p>2. In a bowl, beat the eggs, cream, salt and pepper</p></center>		<!--steps on how to create the meal are provided-->
+			<center><p>3. Pour over onions in frying pan</p></center>
+			<center><p>4. Sprinkle cheese and bacon to the frying pan</p></center>
+			<center><p>5. Cook and stir gently till eggs are set</p></center>
+			<center><p>6. Spoon the ingredients down the centre of the tortilla wrap and fold the sides over filling</p></center>
+			<center><p>7. Warm up in microwave for 1:30 minutes (if refrigerated)</p></center>
+			<center><p>8. Place in toaster till the wrap is completely toasted</p></center>
+			<center><p><a href="#feedback" data-transition="flow" data-role="button" data-inline="true" data-icon="star">Review</a></p></center>		<!--data-icon adds a small icon beside the text-->
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>
+			<a href="#breakfast" data-transition="flow" data-role="button" data-inline="true" data-icon="back">Back</a>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>
+	 
+	 
+	 <!--breakfast 3-->
+
+	 <div data-role="page" id="breakfastC" data-theme="D">
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>This is the breakfastC page</h1></center>
+			<center><h2><p>Welcome to breakfastC page</p></h2></center>
+			<center><p>Egg and Bacon Wrap</p></center>		<!--centres the text-->
+			<center><p><img src="ebwrap.jpg" alt="e+b wrap photo"/></p></center>
+			<p><h2>Ingredients</h2></p>
+			<p>-1 onion, chopped</p>
+			<p>-1 tablespoon butter</p>			<!--ingredients provided-->
+			<p>-600ml thickened cream</p>
+			<p>-1/2 teaspoon salt</p>
+			<p>-1/4 teaspoon pepper</p>
+			<p>-2 cups shredded cheese</p>
+			<p>-1/2 pound sliced bacon, cooked and crumbled</p>
+			<p>-tortilla wraps</p>
+			<center><p><h2>Steps</h2></p></center>
+			<center><p>1. In frying pan, saute onions until translucent</p></center>
+			<center><p>2. In a bowl, beat the eggs, cream, salt and pepper</p></center>
+			<center><p>3. Pour over onions in frying pan</p></center>
+			<center><p>4. Sprinkle cheese and bacon to the frying pan</p></center>
+			<center><p>5. Cook and stir gently till eggs are set</p></center>		<!--steps on how to create the meal are provided-->
+			<center><p>6. Spoon the ingredients down the centre of the tortilla wrap and fold the sides over filling</p></center>
+			<center><p>7. Warm up in microwave for 1:30 minutes (if refrigerated)</p></center>
+			<center><p>8. Place in toaster till the wrap is completely toasted</p></center>
+			<center><p><a href="#feedback" data-transition="flow" data-role="button" data-inline="true" data-icon="star">Review</a></p></center>
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>
+			<a href="#breakfast" data-transition="flow" data-role="button" data-inline="true" data-icon="back">Back</a>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>	
+	
+
+	 <!--breakfast 4-->
+
+	 <div data-role="page" id="breakfastD" data-theme="D">
+		<div data-role="header">		<!--"header" makes text within this section appear at the top of the page-->
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>This is the breakfastD page</h1></center>
+			<center><h2><p>Welcome to breakfastD page</p></h2></center>
+			<center><p>Egg and Bacon Wrap</p></center>
+			<center><p><img src="ebwrap.jpg" alt="e+b wrap photo"/></p></center>
+			<p><h2>Ingredients</h2></p>
+			<p>-1 onion, chopped</p>
+			<p>-1 tablespoon butter</p>			<!--ingredients provided-->
+			<p>-600ml thickened cream</p>
+			<p>-1/2 teaspoon salt</p>
+			<p>-1/4 teaspoon pepper</p>
+			<p>-2 cups shredded cheese</p>
+			<p>-1/2 pound sliced bacon, cooked and crumbled</p>
+			<p>-tortilla wraps</p>
+			<center><p><h2>Steps</h2></p></center>
+			<center><p>1. In frying pan, saute onions until translucent</p></center>
+			<center><p>2. In a bowl, beat the eggs, cream, salt and pepper</p></center>
+			<center><p>3. Pour over onions in frying pan</p></center>
+			<center><p>4. Sprinkle cheese and bacon to the frying pan</p></center>
+			<center><p>5. Cook and stir gently till eggs are set</p></center>
+			<center><p>6. Spoon the ingredients down the centre of the tortilla wrap and fold the sides over filling</p></center>		<!--steps on how to create the meal are provided-->
+			<center><p>7. Warm up in microwave for 1:30 minutes (if refrigerated)</p></center>
+			<center><p>8. Place in toaster till the wrap is completely toasted</p></center>
+			<center><p><a href="#feedback" data-transition="flow" data-role="button" data-inline="true" data-icon="star">Review</a></p></center>
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>
+			<a href="#breakfast" data-transition="flow" data-role="button" data-inline="true" data-icon="back">Back</a>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>	
+
+
+	 <!--breakfast 5-->
+
+	 <div data-role="page" id="breakfastE" data-theme="D">
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>This is the breakfastE page</h1></center>
+			<center><h2><p>Welcome to breakfastE page</p></h2></center>
+			<center><p>Egg and Bacon Wrap</p></center>
+			<center><p><img src="ebwrap.jpg" alt="e+b wrap photo"/></p></center>
+			<p><h2>Ingredients</h2></p>
+			<p>-1 onion, chopped</p>
+			<p>-1 tablespoon butter</p>
+			<p>-600ml thickened cream</p>
+			<p>-1/2 teaspoon salt</p>
+			<p>-1/4 teaspoon pepper</p>			<!--ingredients provided-->
+			<p>-2 cups shredded cheese</p>
+			<p>-1/2 pound sliced bacon, cooked and crumbled</p>
+			<p>-tortilla wraps</p>
+			<center><p><h2>Steps</h2></p></center>
+			<center><p>1. In frying pan, saute onions until translucent</p></center>
+			<center><p>2. In a bowl, beat the eggs, cream, salt and pepper</p></center>
+			<center><p>3. Pour over onions in frying pan</p></center>
+			<center><p>4. Sprinkle cheese and bacon to the frying pan</p></center>		<!--steps on how to create the meal are provided-->
+			<center><p>5. Cook and stir gently till eggs are set</p></center>
+			<center><p>6. Spoon the ingredients down the centre of the tortilla wrap and fold the sides over filling</p></center>
+			<center><p>7. Warm up in microwave for 1:30 minutes (if refrigerated)</p></center>
+			<center><p>8. Place in toaster till the wrap is completely toasted</p></center>
+			<center><p><a href="#feedback" data-transition="flow" data-role="button" data-inline="true" data-icon="star">Review</a></p></center>
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>
+			<a href="#breakfast" data-transition="flow" data-role="button" data-inline="true" data-icon="back">Back</a>
+		</div>
+		<div data-role="footer">		<!--"footer" makes text appear at the bottom of the page-->
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>		 
+	 
+	 <!--lunch 1-->
+
+	 <div data-role="page" id="lunchA" data-theme="D">		<!--the id section assigns a unique id for each page-->
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>This is the lunchA page</h1></center>
+			<center><h2><p>Welcome to lunchA page</p></h2></center>
+			<center><p>Chicken and Avocado Focaccia</p></center>
+			<center><p><img src="cfocaccia.jpg" alt="chicken focaccia photo"/></p></center>
+			<p><h2>Ingredients</h2></p>
+			<p>-focaccia bread</p>
+			<p>-1 poached chicken breast</p>
+			<p>-sliced colby cheese</p>
+			<p>-1/2 avocado</p>
+			<p>-loose spinach</p>
+			<p>-mayonaise</p>			<!--ingredients provided-->
+			<p>-salt</p>
+			<p>-pepper</p>
+			<center><p><h2>Steps</h2></p></center>
+			<center><p>1. Cut your focaccia bread in half horizontally</p></center>
+			<center><p>2. Add the spinach across the bottom</p></center>
+			<center><p>3. Cut the chicken and avocado into thin slices</p></center>
+			<center><p>4. Cut the cheese into triangles</p></center>
+			<center><p>5. Add chicken, avocado and cheese in that order</p></center>
+			<center><p>6. Heat focaccia in microwave for 30 seconds (if refrigerated)</p></center>
+			<center><p>7. Place focaccia into a toaster</p></center>
+			<center><p>8. Once the lid is toasted, take it out</p></center>
+			<center><p>9. Once the cheese melts, take the focaccia out</p></center>
+			<center><p>10. Spread mayonaise on the lid</p></center>		<!--steps on how to create the meal are provided-->
+			<center><p>11. Finally add salt and pepper</p></center>
+			<center><p><a href="#feedback" data-transition="flow" data-role="button" data-inline="true" data-icon="star">Review</a></p></center>
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>
+			<a href="#lunch" data-transition="flow" data-role="button" data-inline="true" data-icon="back">Back</a>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>	 
+	 
+	 
+	 
+	 <!--lunch 2-->
+
+	 <div data-role="page" id="lunchB" data-theme="D">
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>This is the lunchB page</h1></center>
+			<center><h2><p>Welcome to lunchB page</p></h2></center>
+			<center><p>Chicken and Avocado Focaccia</p></center>
+			<center><p><img src="cfocaccia.jpg" alt="chicken focaccia photo"/></p></center>		<!--image of a focaccia appears-->
+			<p><h2>Ingredients</h2></p>
+			<p>-focaccia bread</p>
+			<p>-1 poached chicken breast</p>
+			<p>-sliced colby cheese</p>			<!--ingredients provided-->
+			<p>-1/2 avocado</p>
+			<p>-loose spinach</p>
+			<p>-mayonaise</p>
+			<p>-salt</p>
+			<p>-pepper</p>
+			<center><p><h2>Steps</h2></p></center>
+			<center><p>1. Cut your focaccia bread in half horizontally</p></center>
+			<center><p>2. Add the spinach across the bottom</p></center>
+			<center><p>3. Cut the chicken and avocado into thin slices</p></center>
+			<center><p>4. Cut the cheese into triangles</p></center>		<!--steps on how to create the meal are provided-->
+			<center><p>5. Add chicken, avocado and cheese in that order</p></center>
+			<center><p>6. Heat focaccia in microwave for 30 seconds (if refrigerated)</p></center>
+			<center><p>7. Place focaccia into a toaster</p></center>
+			<center><p>8. Once the lid is toasted, take it out</p></center>
+			<center><p>9. Once the cheese melts, take the focaccia out</p></center>
+			<center><p>10. Spread mayonaise on the lid</p></center>
+			<center><p>11. Finally add salt and pepper</p></center>
+			<center><p><a href="#feedback" data-transition="flow" data-role="button" data-inline="true" data-icon="star">Review</a></p></center>
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>
+			<a href="#lunch" data-transition="flow" data-role="button" data-inline="true" data-icon="back">Back</a>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>
+
+
+	 <!--lunch 3-->
+
+	 <div data-role="page" id="lunchC" data-theme="D">
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>This is the lunchC page</h1></center>
+			<center><h2><p>Welcome to lunchC page</p></h2></center>
+			<center><p>Chicken and Avocado Focaccia</p></center>
+			<center><p><img src="cfocaccia.jpg" alt="chicken focaccia photo"/></p></center>
+			<p><h2>Ingredients</h2></p>
+			<p>-focaccia bread</p>
+			<p>-1 poached chicken breast</p>
+			<p>-sliced colby cheese</p>			<!--ingredients provided-->
+			<p>-1/2 avocado</p>
+			<p>-loose spinach</p>
+			<p>-mayonaise</p>
+			<p>-salt</p>
+			<p>-pepper</p>
+			<center><p><h2>Steps</h2></p></center>
+			<center><p>1. Cut your focaccia bread in half horizontally</p></center>
+			<center><p>2. Add the spinach across the bottom</p></center>
+			<center><p>3. Cut the chicken and avocado into thin slices</p></center>
+			<center><p>4. Cut the cheese into triangles</p></center>
+			<center><p>5. Add chicken, avocado and cheese in that order</p></center>		<!--steps on how to create the meal are provided-->
+			<center><p>6. Heat focaccia in microwave for 30 seconds (if refrigerated)</p></center>
+			<center><p>7. Place focaccia into a toaster</p></center>
+			<center><p>8. Once the lid is toasted, take it out</p></center>
+			<center><p>9. Once the cheese melts, take the focaccia out</p></center>
+			<center><p>10. Spread mayonaise on the lid</p></center>
+			<center><p>11. Finally add salt and pepper</p></center>
+			<center><p><a href="#feedback" data-transition="flow" data-role="button" data-inline="true" data-icon="star">Review</a></p></center>
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>
+			<a href="#lunch" data-transition="flow" data-role="button" data-inline="true" data-icon="back">Back</a>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>
+
+
+	 <!--lunch 4-->
+
+	 <div data-role="page" id="lunchD" data-theme="D">
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>This is the lunchD page</h1></center>
+			<center><h2><p>Welcome to lunchD page</p></h2></center>
+			<center><p>Chicken and Avocado Focaccia</p></center>
+			<center><p><img src="cfocaccia.jpg" alt="chicken focaccia photo"/></p></center>
+			<p><h2>Ingredients</h2></p>
+			<p>-focaccia bread</p>
+			<p>-1 poached chicken breast</p>
+			<p>-sliced colby cheese</p>			<!--ingredients provided-->
+			<p>-1/2 avocado</p>
+			<p>-loose spinach</p>
+			<p>-mayonaise</p>
+			<p>-salt</p>
+			<p>-pepper</p>
+			<center><p><h2>Steps</h2></p></center>
+			<center><p>1. Cut your focaccia bread in half horizontally</p></center>
+			<center><p>2. Add the spinach across the bottom</p></center>
+			<center><p>3. Cut the chicken and avocado into thin slices</p></center>
+			<center><p>4. Cut the cheese into triangles</p></center>
+			<center><p>5. Add chicken, avocado and cheese in that order</p></center>		<!--steps on how to create the meal are provided-->
+			<center><p>6. Heat focaccia in microwave for 30 seconds (if refrigerated)</p></center>
+			<center><p>7. Place focaccia into a toaster</p></center>
+			<center><p>8. Once the lid is toasted, take it out</p></center>
+			<center><p>9. Once the cheese melts, take the focaccia out</p></center>
+			<center><p>10. Spread mayonaise on the lid</p></center>
+			<center><p>11. Finally add salt and pepper</p></center>
+			<center><p><a href="#feedback" data-transition="flow" data-role="button" data-inline="true" data-icon="star">Review</a></p></center>
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>
+			<a href="#lunch" data-transition="flow" data-role="button" data-inline="true" data-icon="back">Back</a>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>
+
+
+	 <!--lunch 5-->
+
+	 <div data-role="page" id="lunchE" data-theme="D"> 		<!--data-role makes a page-->
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>This is the lunchE page</h1></center>
+			<center><h2><p>Welcome to lunchE page</p></h2></center>
+			<center><p>Chicken and Avocado Focaccia</p></center>
+			<center><p><img src="cfocaccia.jpg" alt="chicken focaccia photo"/></p></center>
+			<p><h2>Ingredients</h2></p>
+			<p>-focaccia bread</p>
+			<p>-1 poached chicken breast</p>
+			<p>-sliced colby cheese</p>
+			<p>-1/2 avocado</p>			<!--ingredients provided-->
+			<p>-loose spinach</p>
+			<p>-mayonaise</p>
+			<p>-salt</p>
+			<p>-pepper</p>
+			<center><p><h2>Steps</h2></p></center>
+			<center><p>1. Cut your focaccia bread in half horizontally</p></center>
+			<center><p>2. Add the spinach across the bottom</p></center>
+			<center><p>3. Cut the chicken and avocado into thin slices</p></center>
+			<center><p>4. Cut the cheese into triangles</p></center>
+			<center><p>5. Add chicken, avocado and cheese in that order</p></center>
+			<center><p>6. Heat focaccia in microwave for 30 seconds (if refrigerated)</p></center>
+			<center><p>7. Place focaccia into a toaster</p></center>
+			<center><p>8. Once the lid is toasted, take it out</p></center>		<!--steps on how to create the meal are provided-->
+			<center><p>9. Once the cheese melts, take the focaccia out</p></center>
+			<center><p>10. Spread mayonaise on the lid</p></center>
+			<center><p>11. Finally add salt and pepper</p></center>
+			<center><p><a href="#feedback" data-transition="flow" data-role="button" data-inline="true" data-icon="star">Review</a></p></center>
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>
+			<a href="#lunch" data-transition="flow" data-role="button" data-inline="true" data-icon="back">Back</a>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>	 
+	 
+	 
+	 
+	 <!--dessert 1-->
+
+	 <div data-role="page" id="dessertA" data-theme="D">
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>This is the dessertA page</h1></center>
+			<center><h2><p>Welcome to dessertA page</p></h2></center>
+			<center><p>Hedgehog Slice</p></center>
+			<center><p><img src="hslice.jpg" alt="hedgehog slice photo"/></p></center>		<!--image of the slice appears-->
+			<p><h2>Ingredients</h2></p>
+			<p>-2 packets of plain biscuits</p>
+			<p>-250g butter</p>			<!--ingredients provided-->
+			<p>-3 tablespoons cocoa powder</p>
+			<p>-3 tablespoons shredded coconut</p>
+			<p>-1 tin sweetened condensed milk</p>
+			<center><p><h2>Steps</h2></p></center>
+			<center><p>1. Crush bisuits in a bowl</p></center>		<!--steps on how to create the meal are provided-->
+			<center><p>2. Add cocoa powder and coconut and mix well</p></center>
+			<center><p>3. Melt butter and sweetened condesed milk together</p></center>
+			<center><p>4. Add to dry ingredients</p></center>
+			<center><p>5. Place into a slice pan and refrigerate</p></center>
+			<center><p>6. Wait till slice sets</p></center>
+			<center><p><a href="#feedback" data-transition="flow" data-role="button" data-inline="true" data-icon="star">Review</a></p></center>
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>
+			<a href="#dessert" data-transition="flow" data-role="button" data-inline="true" data-icon="back">Back</a>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>	 
+	 
+	 
+	 
+	 <!--dessert 2-->
+
+	 <div data-role="page" id="dessertB" data-theme="D">
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>This is the dessertB page</h1></center>
+			<center><h2><p>Welcome to dessertB page</p></h2></center>
+			<center><p>Hedgehog Slice</p></center>
+			<center><p><img src="hslice.jpg" alt="hedgehog slice photo"/></p></center>
+			<p><h2>Ingredients</h2></p>
+			<p>-2 packets of plain biscuits</p>			<!--ingredients provided-->
+			<p>-250g butter</p>
+			<p>-3 tablespoons cocoa powder</p>
+			<p>-3 tablespoons shredded coconut</p>
+			<p>-1 tin sweetened condensed milk</p>
+			<center><p><h2>Steps</h2></p></center>
+			<center><p>1. Crush bisuits in a bowl</p></center>
+			<center><p>2. Add cocoa powder and coconut and mix well</p></center>
+			<center><p>3. Melt butter and sweetened condesed milk together</p></center>
+			<center><p>4. Add to dry ingredients</p></center>
+			<center><p>5. Place into a slice pan and refrigerate</p></center>		<!--steps on how to create the meal are provided-->
+			<center><p>6. Wait till slice sets</p></center>
+			<center><p><a href="#feedback" data-transition="flow" data-role="button" data-inline="true" data-icon="star">Review</a></p></center>
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>		<!--#index is the page the link will go to-->
+			<a href="#dessert" data-transition="flow" data-role="button" data-inline="true" data-icon="back">Back</a>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>	 
+	 
+
+	 <!--dessert 3-->
+
+	 <div data-role="page" id="dessertC" data-theme="D">
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>This is the dessertC page</h1></center>
+			<center><h2><p>Welcome to dessertC page</p></h2></center>
+			<center><p>Hedgehog Slice</p></center>
+			<center><p><img src="hslice.jpg" alt="hedgehog slice photo"/></p></center>
+			<p><h2>Ingredients</h2></p>
+			<p>-2 packets of plain biscuits</p>
+			<p>-250g butter</p>			<!--ingredients provided-->
+			<p>-3 tablespoons cocoa powder</p>
+			<p>-3 tablespoons shredded coconut</p>
+			<p>-1 tin sweetened condensed milk</p>
+			<center><p><h2>Steps</h2></p></center>
+			<center><p>1. Crush bisuits in a bowl</p></center>		<!--steps on how to create the meal are provided-->
+			<center><p>2. Add cocoa powder and coconut and mix well</p></center>
+			<center><p>3. Melt butter and sweetened condesed milk together</p></center>
+			<center><p>4. Add to dry ingredients</p></center>
+			<center><p>5. Place into a slice pan and refrigerate</p></center>		<!--text is centred in the page-->
+			<center><p>6. Wait till slice sets</p></center>
+			<center><p><a href="#feedback" data-transition="flow" data-role="button" data-inline="true" data-icon="star">Review</a></p></center>
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>
+			<a href="#dessert" data-transition="flow" data-role="button" data-inline="true" data-icon="back">Back</a>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>	
+
+
+	 <!--dessert 4-->
+
+	 <div data-role="page" id="dessertD" data-theme="D">
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>This is the dessertD page</h1></center>
+			<center><h2><p>Welcome to dessertD page</p></h2></center>
+			<center><p>Hedgehog Slice</p></center>
+			<center><p><img src="hslice.jpg" alt="hedgehog slice photo"/></p></center>
+			<p><h2>Ingredients</h2></p>
+			<p>-2 packets of plain biscuits</p>			<!--ingredients provided-->
+			<p>-250g butter</p>
+			<p>-3 tablespoons cocoa powder</p>
+			<p>-3 tablespoons shredded coconut</p>
+			<p>-1 tin sweetened condensed milk</p>		<!--<p></p> sends the text to the next line-->
+			<center><p><h2>Steps</h2></p></center>
+			<center><p>1. Crush bisuits in a bowl</p></center>		<!--steps on how to create the meal are provided-->
+			<center><p>2. Add cocoa powder and coconut and mix well</p></center>
+			<center><p>3. Melt butter and sweetened condesed milk together</p></center>
+			<center><p>4. Add to dry ingredients</p></center>
+			<center><p>5. Place into a slice pan and refrigerate</p></center>
+			<center><p>6. Wait till slice sets</p></center>
+			<center><p><a href="#feedback" data-transition="flow" data-role="button" data-inline="true" data-icon="star">Review</a></p></center>
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>
+			<a href="#dessert" data-transition="flow" data-role="button" data-inline="true" data-icon="back">Back</a>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>	
+
+
+	 <!--dessert 5-->
+
+	 <div data-role="page" id="dessertE" data-theme="D">
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>This is the dessertE page</h1></center>
+			<center><h2><p>Welcome to dessertE page</p></h2></center>		<!--<h2></h2> changes the style of the text-->
+			<center><p>Hedgehog Slice</p></center>
+			<center><p><img src="hslice.jpg" alt="hedgehog slice photo"/></p></center>
+			<p><h2>Ingredients</h2></p>
+			<p>-2 packets of plain biscuits</p>
+			<p>-250g butter</p>
+			<p>-3 tablespoons cocoa powder</p>
+			<p>-3 tablespoons shredded coconut</p>			<!--ingredients provided-->
+			<p>-1 tin sweetened condensed milk</p>
+			<center><p><h2>Steps</h2></p></center>
+			<center><p>1. Crush bisuits in a bowl</p></center>
+			<center><p>2. Add cocoa powder and coconut and mix well</p></center>		<!--steps on how to create the meal are provided-->
+			<center><p>3. Melt butter and sweetened condesed milk together</p></center>
+			<center><p>4. Add to dry ingredients</p></center>
+			<center><p>5. Place into a slice pan and refrigerate</p></center>
+			<center><p>6. Wait till slice sets</p></center>
+			<center><p><a href="#feedback" data-transition="flow" data-role="button" data-inline="true" data-icon="star">Review</a></p></center>
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>
+			<a href="#dessert" data-transition="flow" data-role="button" data-inline="true" data-icon="back">Back</a>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>	
+
+
+	 
+	 <!--feedback-->
+
+	 <div data-role="page" id="feedback" data-theme="D">
+		<div data-role="header">
+			<center><h1>MOCHACHINOS</h1></center>
+		</div>
+		<div data-role="main" class="ui-content">
+			<center><h1>This is the review page</h1></center>
+			<center><h2><p>Welcome to review page</p></h2></center>
+				<h3>Review</h3>
+				<form>		<!--creates a form-->
+					<label for ="name">Name</label>		<!--adds a field to a form-->
+					<textarea name "name" id="name"></textarea>		
+					<label for="review">Phone No:</label>
+					<textarea name "phone" id="phone" ></textarea>		<!--adds a text area for each field-->
+					<label for="review">Meal:</label>
+					<textarea name "meal" id="meal" placeholder="What did you have?"></textarea>		<!--placeholder adds text that instructs the user of what to write-->
+					<label for="review">Comments:</label>
+					<textarea name "comments" id="comments" placeholder="How was it?"></textarea>		<!--the text is removed once the user starts writing-->
+					<label for ="name">Rating</label>
+					<input type="range" name "rate" id="rate" min="0" max="5"/>		<!--creates a slider from 0-5 for ratings-->
+					<label for="select-choice-0" class="select"><h2> User rating </h2></label>		<!--enables users to select an option as a comment-->
+					<select name="note_utilisateur" id="note_utilisateur" data-native-menu="false" data-theme="c" >		<!--enables the users to select an option-->
+					<option value="one" class="one"> Not good at all </option>
+					<option value="two" class="two">Average </option>		<!--only one option can be selected-->
+					<option value="three" class="three">Pretty good </option>
+					<option value="four" class="four"> Excellent </option>
+					</select>		<!--ends he select-->
+					<input type="submit" value="Send the Form" >		<!--on submit, sends the form-->
+				</form>		<!--ends the form-->
+			<a href="#index" data-transition="flow" data-role="button" data-inline="true" data-icon="home">Home</a>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>	 
+	 
+	 
+</body>
+</html>

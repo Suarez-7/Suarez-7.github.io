@@ -1,0 +1,44 @@
+<html> 
+	<head> 
+	<title>Home</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head> 
+
+	 <!--feedback-->
+
+	 <div data-role="page" id="feedback">
+		<div data-role="header">
+			<h1>Review</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<h1>This is the review page</h1>
+			<p>Welcome to review page</p>
+				<h3>Review</h3>
+
+				<form id="myform" onSubmit="return validate(orderform)" method="post">
+				<div data-role="fieldcontain">
+				$("#myform").bind('ajax:complete', function() {
+				<p><label for="review">Name:</label></p>
+				<input type="text" name="name" id="name" />
+				<p><label for="review">Phone No.:</label></p>
+				<input type="text" name="phone" id="phone" />
+				<p><label for="review">Meal:</label></p>
+				<input type="text" name="meal" id="meal" />
+				<p><label for="review">Review:</label></p>
+				<input type="text" name="review" id="review" />
+				</div>
+				<input type="submit" value="Send the Form" >
+				
+				 });
+				 </form>	
+			<a href="#index" data-transition="flow">Home</a>
+		</div>
+		<div data-role="footer">
+			<h2>&copy; Allen Seyran 2015</h2>
+		</div>
+	 </div>	
